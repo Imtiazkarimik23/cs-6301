@@ -32,24 +32,183 @@
 
   <div class="container">
     <div class="page">
-      <h2>Charles B. Wang Center, Stony Brook University</h2>
-      <p>The NextG-Sec workshop will be held at the <a href="https://www.stonybrook.edu/commcms/wang/">Charles B. Wang Center</a> on the campus of Stony Brook University in Stony Brook, New York.</p>
+<section>
+  <h2>Introduction</h2>
+  <p>
+    In this semester-long project, students will conduct research on network or systems
+    security in teams of 1–2 people under the instructor's supervision. All teams and
+    project topics must be approved by the instructor. The outcome of this project will
+    be similar to a conference-style paper of at most 10 pages, in which you build an
+    argument for studying the open research problems you advocate investigating—identifying
+    why the problem is important and why it is solvable in the near future. The grade will
+    be based on novelty, depth, correctness, rigor of execution, clarity of presentation,
+    and effort.
+  </p>
 
-      <h3>Venue Information</h3>
-      <p>Opened in 2002, the Wang Center is a cultural hub dedicated to promoting an understanding of Asian and Asian American cultures. This impressive 120,000-square-foot facility was designed by architect P.H. Tuan and features a distinctive 100-foot octagonal pagoda tower. Inside, the center houses conference halls, auditoriums, and galleries, all surrounding a beautiful outdoor garden.</p>
+  <h2>Project Theme</h2>
+  <p>
+    “Thinking like an adversary” is critical to understanding (1) the current security and
+    privacy posture of a system, (2) how existing security policies can be broken, and
+    (3) how to enforce stronger and more robust security policies. Accordingly, each
+    project should align with the theme of <strong>security analysis of an existing system</strong>.
+  </p>
+  <p>
+    The overarching goal is to design and implement a systematic security evaluation
+    framework using program analysis, software testing, formal verification, and applied
+    cryptography. Each project consists of two parts, each with multiple milestones.
+  </p>
 
-      <h3>Location</h3>
-      <p>The Charles B. Wang Center is conveniently located on the Stony Brook University campus. You can find the exact location by searching "Charles B. Wang Center Stony Brook" in Google Maps or Apple Maps.</p>
+  <h2>Part 1 – Reproducing an Existing Attack</h2>
+  <p>
+    As the first step, you will reproduce a known attack on an existing system. Your task
+    is to understand a known vulnerability and its corresponding attack and write an
+    original exploit. You may not contact the paper authors for exploits or use
+    pre-packaged attack tools. However, you may use open-source, general-purpose tools
+    (e.g., gdb, Wireshark, packet sniffers) and scripts.
+  </p>
+  <p>
+    Some vulnerabilities may have been fixed in newer software or libraries (e.g., Linux,
+    TCP, TLS), so you may need to target older versions.
+  </p>
+  <p>
+    According to the course ethics policy, you must not test attacks against systems owned
+    by others. All attacks must be conducted against your own isolated device, machine,
+    or virtual machine.
+  </p>
+  <p>
+    You will present a demo showing (1) the vulnerability, (2) how it can be exploited,
+    and (3) the implications of the attack. You will also explain how you implemented the
+    exploit, set up the attack environment, and the technical challenges encountered.
+  </p>
 
-      <h3>Workshop Details</h3>
-      <ul>
-        <li><strong>Location:</strong> Charles B. Wang Center, Stony Brook University</li>
-        <li><strong>Address:</strong> Stony Brook, NY 11794, USA</li>
-        <li><strong>Dates:</strong> June 23-26, 2026 (co-located with ACNS 2026)</li>
-      </ul>
+  <h2>Part 2 – Project Extensions</h2>
+  <p>
+    Based on insights gained from Part 1, you may extend your project in one or more of
+    the following directions:
+  </p>
+  <ul>
+    <li>Identify a new attack on the same system or protocol.</li>
+    <li>Design a systematic security analysis framework using formal verification, static or dynamic analysis, fuzzing, or other testing techniques.</li>
+    <li>Propose verified or high-assurance defenses.</li>
+  </ul>
 
-      <h3>Travel Information</h3>
-      <p>Stony Brook University is located on Long Island, about 50 miles east of New York City. The campus is accessible by car and public transportation. For more information about traveling to Stony Brook, visit the <a href="https://www.stonybrook.edu/" target="_blank">Stony Brook University website</a>.</p>
+  <h2>Project Topics</h2>
+  <p>
+    Students are encouraged to consult recent proceedings from top security venues,
+    including IEEE Security &amp; Privacy (Oakland), ACM CCS, NDSS, and USENIX Security.
+    Relevant work can also be found at Black Hat and DEF CON.
+  </p>
+
+  <h3>Representative Conferences and Years</h3>
+  <ul>
+    <li>IEEE S&amp;P (Oakland): 2016–2024</li>
+    <li>ACM CCS: 2016–2024</li>
+    <li>NDSS: 2016–2024</li>
+    <li>USENIX Security: 2016–2024</li>
+    <li>Black Hat: 2020–2024</li>
+    <li>DEF CON: 2020–2024</li>
+  </ul>
+
+  <h2>Project Milestones</h2>
+  <p>
+    Dates are subject to change and will be announced on Canvas. Please refer to the
+    course calendar for updates.
+  </p>
+  <ul>
+    <li><strong>January 24:</strong> Project group information and project proposal due</li>
+    <li><strong>February 07:</strong> Part 1 attack implementation</li>
+    <li><strong>February 11 &amp; 13:</strong> Part 1 demo and presentation</li>
+    <li><strong>February 18:</strong> Part 2 checkpoint 1 (proposal due)</li>
+  </ul>
+
+  <h2>Project Proposal</h2>
+  <p>
+    The proposal must not exceed two pages (including references). Use the ACM Overleaf
+    template for all project-related submissions.
+  </p>
+
+  <h3>Proposal Components</h3>
+  <ul>
+    <li>
+      <strong>What (Problem Statement):</strong> Project title, team member contact
+      details, problem statement, goals, and the specific attack(s) to be reproduced.
+    </li>
+    <li>
+      <strong>Why (Motivation):</strong> Importance of the problem, relevant prior work,
+      and why the vulnerability is critical and difficult to detect manually.
+    </li>
+    <li>
+      <strong>How (Design / Implementation):</strong> Resources required, plans for Part 2,
+      related codebases, and evaluation criteria (e.g., effectiveness, efficiency).
+    </li>
+    <li>
+      <strong>Workload:</strong> Task distribution among team members and milestones for
+      Part 1.
+    </li>
+  </ul>
+
+  <h2>Final Report</h2>
+  <p>
+    You must submit a minimum 8-page (excluding references) conference- or workshop-style
+    paper. Typical sections include Abstract, Introduction, Background, Design Overview,
+    Design Details, Implementation, Evaluation, Discussion and Limitations, Related Work,
+    and Conclusion and Future Work.
+  </p>
+
+  <h3>Guidelines for Key Sections</h3>
+
+  <h4>Abstract</h4>
+  <p>
+    The abstract should be approximately 300 words and include: area, problem, solution
+    idea, methodology, results, and take-away.
+  </p>
+
+  <h4>Introduction</h4>
+  <p>
+    Motivate the research problem, define the problem statement, justify why existing
+    solutions are insufficient, present your proposal and intuitions, and summarize
+    high-level results.
+  </p>
+
+  <h4>Background</h4>
+  <p>
+    Provide only the background necessary to understand the paper. Avoid unrelated or
+    unused details.
+  </p>
+
+  <h4>Design Overview</h4>
+  <p>
+    Describe adversary assumptions, design challenges, high-level intuitions, and a
+    system overview. Diagrams are encouraged.
+  </p>
+
+  <h4>Design Details</h4>
+  <p>
+    Discuss all system components, critical corner cases, and design rationale at a
+    conceptual level.
+  </p>
+
+  <h4>Implementation</h4>
+  <p>
+    Describe the software and hardware used and how modules interact to realize the
+    system design.
+  </p>
+
+  <h4>Evaluation</h4>
+  <p>
+    Describe the evaluation setup, metrics, datasets, baselines, and experimental results
+    using tables and figures.
+  </p>
+
+  <h4>Related Work</h4>
+  <p>
+    Present a narrative comparison of prior work, highlighting differences and advances
+    relative to your approach.
+  </p>
+
+  <h4>Conclusion and Future Work</h4>
+  <p>
+    Reflect on insights gained and outline future resea
 
     </div>
   </div>
