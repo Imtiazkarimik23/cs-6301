@@ -155,60 +155,113 @@
     and Conclusion and Future Work.
   </p>
 
-  <h3>Guidelines for Key Sections</h3>
-
-  <h4>Abstract</h4>
+<section>
+  <h2>Abstract</h2>
   <p>
-    The abstract should be approximately 300 words and include: area, problem, solution
-    idea, methodology, results, and take-away.
+    An abstract should be relatively short: one paragraph, around 300 words. A wandering
+    and off-topic abstract can confuse the reader. Consider the following template for
+    writing an abstract (approximately one sentence per point):
   </p>
+  <ul>
+    <li>Area</li>
+    <li>Problem</li>
+    <li>Solution Idea</li>
+    <li>Methodology</li>
+    <li>Results</li>
+    <li>Take-away</li>
+  </ul>
 
-  <h4>Introduction</h4>
+  <h2>Introduction</h2>
   <p>
-    Motivate the research problem, define the problem statement, justify why existing
-    solutions are insufficient, present your proposal and intuitions, and summarize
+    The abstract and introduction are two important sections of your paper. An introduction
+    is a longer version of the same outline as the abstract, often dedicating about a
+    paragraph per point. This section motivates the research problem, clearly states the
+    problem, explains why existing solutions are insufficient, presents the proposed ideas,
+    provides high-level intuitions for why the approach should work, and summarizes the
     high-level results.
   </p>
-
-  <h4>Background</h4>
   <p>
-    Provide only the background necessary to understand the paper. Avoid unrelated or
-    unused details.
+    If you fail to capture the reviewer’s interest in the abstract and introduction, it is
+    difficult to recover. These sections are also the most-read parts of a published paper.
   </p>
 
-  <h4>Design Overview</h4>
+  <h2>Background</h2>
   <p>
-    Describe adversary assumptions, design challenges, high-level intuitions, and a
-    system overview. Diagrams are encouraged.
+    Provide only the background knowledge necessary to understand your paper. Do not include
+    details that are never used or referenced. For example, in a paper on X.509 certificate
+    validation, it is unnecessary to explain how public and private keys are generated or
+    their key lengths.
   </p>
 
-  <h4>Design Details</h4>
+  <h2>Design Overview</h2>
   <p>
-    Discuss all system components, critical corner cases, and design rationale at a
-    conceptual level.
+    Discuss the security assumptions, adversary capabilities and goals, and the trusted
+    computing base. Summarize the design challenges of your proposed solution and provide
+    high-level intuitions for addressing them. Finally, present a high-level overview of
+    your system or solution.
+  </p>
+  <p>
+    You may use diagrams to illustrate the proposal. Without delving into detailed
+    implementations, describe the functionality of each major component and the interactions
+    among them using appropriate figures.
   </p>
 
-  <h4>Implementation</h4>
+  <h2>Design Details</h2>
   <p>
-    Describe the software and hardware used and how modules interact to realize the
-    system design.
+    Describe all components of your proposed system in detail and explain how critical
+    corner cases are handled. These corner cases are important for enabling experts to
+    fully understand your design and for allowing others to replicate or extend your work.
+  </p>
+  <p>
+    Always explain the intuition behind your design decisions—why you made certain choices
+    is more important than how they were implemented. Keep the discussion at a conceptual
+    level rather than focusing on low-level implementation details.
   </p>
 
-  <h4>Evaluation</h4>
+  <h2>Implementation Details</h2>
   <p>
-    Describe the evaluation setup, metrics, datasets, baselines, and experimental results
-    using tables and figures.
+    Describe the software and hardware used, written, or modified in your implementation.
+    Explain what each module does, how it relates to the system components, and how it
+    supports the overall solution.
   </p>
 
-  <h4>Related Work</h4>
+  <h2>Evaluation</h2>
+  <h3>Evaluation Setup</h3>
   <p>
-    Present a narrative comparison of prior work, highlighting differences and advances
-    relative to your approach.
+    Describe how experiments were set up, including evaluation metrics, datasets used (if
+    any), and baseline results for comparison. Ensure that the metrics directly address
+    the research questions.
   </p>
 
-  <h4>Conclusion and Future Work</h4>
+  <h3>Evaluation Results</h3>
   <p>
-    Reflect on insights gained and outline future reseach.
+    Present results using tables and graphs. If different experiments use different setups,
+    clearly describe the hardware, software, and datasets used. For informal security
+    analysis, justify how the proposed solution prevents the attacks described in the
+    threat model.
+  </p>
+
+  <h2>Related Work</h2>
+  <p>
+    Conduct a thorough investigation of related work. A good related work section is not a
+    simple list of papers; instead, it tells a story of how prior research has evolved to
+    address related problems. Clearly contrast your work with prior approaches rather than
+    merely summarizing them.
+  </p>
+  <p>
+    Even if your research is ongoing, you should have enough understanding to compare your
+    ideas with existing work. Pay attention to how related work sections are written in
+    high-quality papers and identify what makes them effective or ineffective.
+  </p>
+
+  <h2>Conclusion and Future Work</h2>
+  <p>
+    Do not summarize the paper in this section. Instead, reflect on the broader implications
+    of your work and discuss future research directions and possibilities that arise from
+    your findings.
+  </p>
+</section>
+
 
     </div>
   </div>
