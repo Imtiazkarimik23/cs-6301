@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>NextG-Sec 2026: Organizers</title>
+  <meta name="description" content="NextG-Sec 2026 Workshop - Organizers">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <img class="header-image u-max-full-width" src="images/nextg-sec-banner.jpg" alt="NextG-Sec 2026">
+      </div>
+    </div>
+  </header>
+
+  <header class="site-menu">
+    <div id="menu"></div>
+    <script>
+      fetch("components/menu.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("menu").innerHTML = data; });
+    </script>
+  </header>
+
+  <div class="container">
+    <div class="page">
+      <h2>Workshop Organization</h2>
+
+      <h3>Workshop Chairs</h3>
+      <ul>
+        <li><strong>Imtiaz Karim</strong>, <em>University of Texas at Dallas</em></li>
+        <li><strong>Moti Yung</strong>, <em>Google; Columbia University</em></li>
+      </ul>
+
+      <!-- <h3>Workshop Chair Bio-sketches</h3> -->
+
+      <!-- <h4>Imtiaz Karim</h4> -->
+      <!-- <p>Imtiaz Karim is an Assistant Professor of Computer Science at the University of Texas at Dallas. He has led research in cellular and NextG network security, in terms of specification and implementation analysis, developing PQ-secure NextG protocols, formal verification of large-scale wireless protocols, and on using AI for protocol analysis.</p> -->
+
+      <!-- <h4>Moti Yung</h4> -->
+      <!-- <p>Moti Yung is a researcher and engineer at Google. He has extensive experience in cryptography and security, and is a key contributor to applied cryptography research globally.</p> -->
+
+      <h3>Program Committee</h3>
+      <ul>
+        
+        <li>Arupjyoti Bhuyan, <em>Idaho National Lab</em></li>
+        <li>Ashish Kundu, <em>Cisco Research</em></li>
+        <li>Attila A Yavuz, <em>University of South Florida</em></li>
+        <li>Brad Reaves, <em>North Carolina State University</em></li>
+        <li>Christina Pöpper, <em>NYU Abu Dhabi</em></li>
+        <li>Elisa Bertino, <em>Purdue University</em></li>
+        <li>Joshua Groen, <em>United States Military Academy at West Point</em></li>
+        <li>Rouzbeh Behnia, <em>University of South Florida</em></li>
+        <li>Syed Rafiul Hussain, <em>Penn State University</em></li>
+        <li>Yvo G. Desmedt, <em>University of Texas at Dallas</em></li>
+        <li>Tao Wan, <em>CableLabs, Carleton University</em></li>
+        <li>Zhiqiang Lin, <em>Ohio State University</em></li>       
+      </ul>
+      <!-- <p><em>Additional 5-6 program committee members from academia and industry will be invited soon.</em></p> -->
+      <h3>Organizing Committee</h3>
+        <ul>
+        <li>Mirza Masfiqur Rahman, <em>Purdue University</em>, Publication Chair</li>
+        <li>Kazi Samin Mubasshir, <em>Purdue University</em>, Web and Publicity Chair</li>
+        <li>Mashroor Hasan Bhuiyan, <em>University of Texas at Dallas</em>, Web and Publicity Chair</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div id="sponsors"></div>
+    <script>
+      fetch("components/sponsors.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById("sponsors").innerHTML = data; });
+    </script>
+  </footer>
+</body>
+
+</html>
